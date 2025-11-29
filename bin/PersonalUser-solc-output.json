@@ -1,0 +1,530 @@
+{
+    "contracts": {
+        "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol": {
+            "Pengguna": {
+                "abi": [],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "functionDebugData": {
+                            "allocate_memory": {
+                                "entryPoint": 1508,
+                                "id": null,
+                                "parameterSlots": 1,
+                                "returnSlots": 1
+                            },
+                            "allocate_memory_3670": {
+                                "entryPoint": 1477,
+                                "id": null,
+                                "parameterSlots": 0,
+                                "returnSlots": 1
+                            }
+                        },
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "6080604052346105c1576100116105c5565b61001b60406105e4565b60068152653432b936b0b760d11b6020820152815260208101906014825261004360406105e4565b600681526539b632b6b0b760d11b602082015260408201908152905180519092906001600160401b038111610322575f54600181811c911680156105b7575b602082101461030457601f8111610555575b506020601f82116001146104f457819293945f926104e9575b50508160011b915f199060031b1c1916175f555b516001555180516001600160401b03811161032257600254600181811c911680156104df575b602082101461030457601f811161047c575b50602091601f821160011461041c579181925f92610411575b50508160011b915f199060031b1c1916176002555b61012f6105c5565b61013960406105e4565b60048152630617365760e41b6020820152815260208101906014825261015f60406105e4565b600681526539b632b6b0b760d11b602082015260408201908152905180519092906001600160401b03811161032257600354600181811c91168015610407575b602082101461030457601f81116103a4575b506020601f821160011461034157819293945f92610336575b50508160011b915f199060031b1c1916176003555b516004555180516001600160401b03811161032257600554600181811c91168015610318575b602082101461030457601f81116102be575b50602091601f821160011461025e579181925f92610253575b50508160011b915f199060031b1c1916176005555b6040516039908161060a8239f35b015190505f80610230565b601f1982169260055f52805f20915f5b8581106102a65750836001951061028e575b505050811b01600555610245565b01515f1960f88460031b161c191690555f8080610280565b9192602060018192868501518155019401920161026e565b60055f5260205f20601f830160051c810191602084106102fa575b601f0160051c01905b8181106102ef5750610217565b5f81556001016102e2565b90915081906102d9565b634e487b7160e01b5f52602260045260245ffd5b90607f1690610205565b634e487b7160e01b5f52604160045260245ffd5b015190505f806101ca565b601f1982169060035f52805f20915f5b81811061038c57509583600195969710610374575b505050811b016003556101df565b01515f1960f88460031b161c191690555f8080610366565b9192602060018192868b015181550194019201610351565b60035f527fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b601f830160051c810191602084106103fd575b601f0160051c01905b8181106103f257506101b1565b5f81556001016103e5565b90915081906103dc565b90607f169061019f565b015190505f80610112565b601f1982169260025f52805f20915f5b8581106104645750836001951061044c575b505050811b01600255610127565b01515f1960f88460031b161c191690555f808061043e565b9192602060018192868501518155019401920161042c565b60025f527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace601f830160051c810191602084106104d5575b601f0160051c01905b8181106104ca57506100f9565b5f81556001016104bd565b90915081906104b4565b90607f16906100e7565b015190505f806100ad565b601f198216905f8052805f20915f5b81811061053d57509583600195969710610525575b505050811b015f556100c1565b01515f1960f88460031b161c191690555f8080610518565b9192602060018192868b015181550194019201610503565b5f80527f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563601f830160051c810191602084106105ad575b601f0160051c01905b8181106105a25750610094565b5f8155600101610595565b909150819061058c565b90607f1690610082565b5f80fd5b60405190606082016001600160401b0381118382101761032257604052565b6040519190601f01601f191682016001600160401b038111838210176103225760405256fe5f80fdfea26469706673582212202cf7881e816c3fa7598714caa546d195321bdeed6109b7c6de35b29d5eb7959464736f6c634300081e0033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE PUSH2 0x5C1 JUMPI PUSH2 0x11 PUSH2 0x5C5 JUMP JUMPDEST PUSH2 0x1B PUSH1 0x40 PUSH2 0x5E4 JUMP JUMPDEST PUSH1 0x6 DUP2 MSTORE PUSH6 0x3432B936B0B7 PUSH1 0xD1 SHL PUSH1 0x20 DUP3 ADD MSTORE DUP2 MSTORE PUSH1 0x20 DUP2 ADD SWAP1 PUSH1 0x14 DUP3 MSTORE PUSH2 0x43 PUSH1 0x40 PUSH2 0x5E4 JUMP JUMPDEST PUSH1 0x6 DUP2 MSTORE PUSH6 0x39B632B6B0B7 PUSH1 0xD1 SHL PUSH1 0x20 DUP3 ADD MSTORE PUSH1 0x40 DUP3 ADD SWAP1 DUP2 MSTORE SWAP1 MLOAD DUP1 MLOAD SWAP1 SWAP3 SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT PUSH2 0x322 JUMPI PUSH0 SLOAD PUSH1 0x1 DUP2 DUP2 SHR SWAP2 AND DUP1 ISZERO PUSH2 0x5B7 JUMPI JUMPDEST PUSH1 0x20 DUP3 LT EQ PUSH2 0x304 JUMPI PUSH1 0x1F DUP2 GT PUSH2 0x555 JUMPI JUMPDEST POP PUSH1 0x20 PUSH1 0x1F DUP3 GT PUSH1 0x1 EQ PUSH2 0x4F4 JUMPI DUP2 SWAP3 SWAP4 SWAP5 PUSH0 SWAP3 PUSH2 0x4E9 JUMPI JUMPDEST POP POP DUP2 PUSH1 0x1 SHL SWAP2 PUSH0 NOT SWAP1 PUSH1 0x3 SHL SHR NOT AND OR PUSH0 SSTORE JUMPDEST MLOAD PUSH1 0x1 SSTORE MLOAD DUP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT PUSH2 0x322 JUMPI PUSH1 0x2 SLOAD PUSH1 0x1 DUP2 DUP2 SHR SWAP2 AND DUP1 ISZERO PUSH2 0x4DF JUMPI JUMPDEST PUSH1 0x20 DUP3 LT EQ PUSH2 0x304 JUMPI PUSH1 0x1F DUP2 GT PUSH2 0x47C JUMPI JUMPDEST POP PUSH1 0x20 SWAP2 PUSH1 0x1F DUP3 GT PUSH1 0x1 EQ PUSH2 0x41C JUMPI SWAP2 DUP2 SWAP3 PUSH0 SWAP3 PUSH2 0x411 JUMPI JUMPDEST POP POP DUP2 PUSH1 0x1 SHL SWAP2 PUSH0 NOT SWAP1 PUSH1 0x3 SHL SHR NOT AND OR PUSH1 0x2 SSTORE JUMPDEST PUSH2 0x12F PUSH2 0x5C5 JUMP JUMPDEST PUSH2 0x139 PUSH1 0x40 PUSH2 0x5E4 JUMP JUMPDEST PUSH1 0x4 DUP2 MSTORE PUSH4 0x6173657 PUSH1 0xE4 SHL PUSH1 0x20 DUP3 ADD MSTORE DUP2 MSTORE PUSH1 0x20 DUP2 ADD SWAP1 PUSH1 0x14 DUP3 MSTORE PUSH2 0x15F PUSH1 0x40 PUSH2 0x5E4 JUMP JUMPDEST PUSH1 0x6 DUP2 MSTORE PUSH6 0x39B632B6B0B7 PUSH1 0xD1 SHL PUSH1 0x20 DUP3 ADD MSTORE PUSH1 0x40 DUP3 ADD SWAP1 DUP2 MSTORE SWAP1 MLOAD DUP1 MLOAD SWAP1 SWAP3 SWAP1 PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT PUSH2 0x322 JUMPI PUSH1 0x3 SLOAD PUSH1 0x1 DUP2 DUP2 SHR SWAP2 AND DUP1 ISZERO PUSH2 0x407 JUMPI JUMPDEST PUSH1 0x20 DUP3 LT EQ PUSH2 0x304 JUMPI PUSH1 0x1F DUP2 GT PUSH2 0x3A4 JUMPI JUMPDEST POP PUSH1 0x20 PUSH1 0x1F DUP3 GT PUSH1 0x1 EQ PUSH2 0x341 JUMPI DUP2 SWAP3 SWAP4 SWAP5 PUSH0 SWAP3 PUSH2 0x336 JUMPI JUMPDEST POP POP DUP2 PUSH1 0x1 SHL SWAP2 PUSH0 NOT SWAP1 PUSH1 0x3 SHL SHR NOT AND OR PUSH1 0x3 SSTORE JUMPDEST MLOAD PUSH1 0x4 SSTORE MLOAD DUP1 MLOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT PUSH2 0x322 JUMPI PUSH1 0x5 SLOAD PUSH1 0x1 DUP2 DUP2 SHR SWAP2 AND DUP1 ISZERO PUSH2 0x318 JUMPI JUMPDEST PUSH1 0x20 DUP3 LT EQ PUSH2 0x304 JUMPI PUSH1 0x1F DUP2 GT PUSH2 0x2BE JUMPI JUMPDEST POP PUSH1 0x20 SWAP2 PUSH1 0x1F DUP3 GT PUSH1 0x1 EQ PUSH2 0x25E JUMPI SWAP2 DUP2 SWAP3 PUSH0 SWAP3 PUSH2 0x253 JUMPI JUMPDEST POP POP DUP2 PUSH1 0x1 SHL SWAP2 PUSH0 NOT SWAP1 PUSH1 0x3 SHL SHR NOT AND OR PUSH1 0x5 SSTORE JUMPDEST PUSH1 0x40 MLOAD PUSH1 0x39 SWAP1 DUP2 PUSH2 0x60A DUP3 CODECOPY RETURN JUMPDEST ADD MLOAD SWAP1 POP PUSH0 DUP1 PUSH2 0x230 JUMP JUMPDEST PUSH1 0x1F NOT DUP3 AND SWAP3 PUSH1 0x5 PUSH0 MSTORE DUP1 PUSH0 KECCAK256 SWAP2 PUSH0 JUMPDEST DUP6 DUP2 LT PUSH2 0x2A6 JUMPI POP DUP4 PUSH1 0x1 SWAP6 LT PUSH2 0x28E JUMPI JUMPDEST POP POP POP DUP2 SHL ADD PUSH1 0x5 SSTORE PUSH2 0x245 JUMP JUMPDEST ADD MLOAD PUSH0 NOT PUSH1 0xF8 DUP5 PUSH1 0x3 SHL AND SHR NOT AND SWAP1 SSTORE PUSH0 DUP1 DUP1 PUSH2 0x280 JUMP JUMPDEST SWAP2 SWAP3 PUSH1 0x20 PUSH1 0x1 DUP2 SWAP3 DUP7 DUP6 ADD MLOAD DUP2 SSTORE ADD SWAP5 ADD SWAP3 ADD PUSH2 0x26E JUMP JUMPDEST PUSH1 0x5 PUSH0 MSTORE PUSH1 0x20 PUSH0 KECCAK256 PUSH1 0x1F DUP4 ADD PUSH1 0x5 SHR DUP2 ADD SWAP2 PUSH1 0x20 DUP5 LT PUSH2 0x2FA JUMPI JUMPDEST PUSH1 0x1F ADD PUSH1 0x5 SHR ADD SWAP1 JUMPDEST DUP2 DUP2 LT PUSH2 0x2EF JUMPI POP PUSH2 0x217 JUMP JUMPDEST PUSH0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x2E2 JUMP JUMPDEST SWAP1 SWAP2 POP DUP2 SWAP1 PUSH2 0x2D9 JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x22 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0x205 JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST ADD MLOAD SWAP1 POP PUSH0 DUP1 PUSH2 0x1CA JUMP JUMPDEST PUSH1 0x1F NOT DUP3 AND SWAP1 PUSH1 0x3 PUSH0 MSTORE DUP1 PUSH0 KECCAK256 SWAP2 PUSH0 JUMPDEST DUP2 DUP2 LT PUSH2 0x38C JUMPI POP SWAP6 DUP4 PUSH1 0x1 SWAP6 SWAP7 SWAP8 LT PUSH2 0x374 JUMPI JUMPDEST POP POP POP DUP2 SHL ADD PUSH1 0x3 SSTORE PUSH2 0x1DF JUMP JUMPDEST ADD MLOAD PUSH0 NOT PUSH1 0xF8 DUP5 PUSH1 0x3 SHL AND SHR NOT AND SWAP1 SSTORE PUSH0 DUP1 DUP1 PUSH2 0x366 JUMP JUMPDEST SWAP2 SWAP3 PUSH1 0x20 PUSH1 0x1 DUP2 SWAP3 DUP7 DUP12 ADD MLOAD DUP2 SSTORE ADD SWAP5 ADD SWAP3 ADD PUSH2 0x351 JUMP JUMPDEST PUSH1 0x3 PUSH0 MSTORE PUSH32 0xC2575A0E9E593C00F959F8C92F12DB2869C3395A3B0502D05E2516446F71F85B PUSH1 0x1F DUP4 ADD PUSH1 0x5 SHR DUP2 ADD SWAP2 PUSH1 0x20 DUP5 LT PUSH2 0x3FD JUMPI JUMPDEST PUSH1 0x1F ADD PUSH1 0x5 SHR ADD SWAP1 JUMPDEST DUP2 DUP2 LT PUSH2 0x3F2 JUMPI POP PUSH2 0x1B1 JUMP JUMPDEST PUSH0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x3E5 JUMP JUMPDEST SWAP1 SWAP2 POP DUP2 SWAP1 PUSH2 0x3DC JUMP JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0x19F JUMP JUMPDEST ADD MLOAD SWAP1 POP PUSH0 DUP1 PUSH2 0x112 JUMP JUMPDEST PUSH1 0x1F NOT DUP3 AND SWAP3 PUSH1 0x2 PUSH0 MSTORE DUP1 PUSH0 KECCAK256 SWAP2 PUSH0 JUMPDEST DUP6 DUP2 LT PUSH2 0x464 JUMPI POP DUP4 PUSH1 0x1 SWAP6 LT PUSH2 0x44C JUMPI JUMPDEST POP POP POP DUP2 SHL ADD PUSH1 0x2 SSTORE PUSH2 0x127 JUMP JUMPDEST ADD MLOAD PUSH0 NOT PUSH1 0xF8 DUP5 PUSH1 0x3 SHL AND SHR NOT AND SWAP1 SSTORE PUSH0 DUP1 DUP1 PUSH2 0x43E JUMP JUMPDEST SWAP2 SWAP3 PUSH1 0x20 PUSH1 0x1 DUP2 SWAP3 DUP7 DUP6 ADD MLOAD DUP2 SSTORE ADD SWAP5 ADD SWAP3 ADD PUSH2 0x42C JUMP JUMPDEST PUSH1 0x2 PUSH0 MSTORE PUSH32 0x405787FA12A823E0F2B7631CC41B3BA8828B3321CA811111FA75CD3AA3BB5ACE PUSH1 0x1F DUP4 ADD PUSH1 0x5 SHR DUP2 ADD SWAP2 PUSH1 0x20 DUP5 LT PUSH2 0x4D5 JUMPI JUMPDEST PUSH1 0x1F ADD PUSH1 0x5 SHR ADD SWAP1 JUMPDEST DUP2 DUP2 LT PUSH2 0x4CA JUMPI POP PUSH2 0xF9 JUMP JUMPDEST PUSH0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x4BD JUMP JUMPDEST SWAP1 SWAP2 POP DUP2 SWAP1 PUSH2 0x4B4 JUMP JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0xE7 JUMP JUMPDEST ADD MLOAD SWAP1 POP PUSH0 DUP1 PUSH2 0xAD JUMP JUMPDEST PUSH1 0x1F NOT DUP3 AND SWAP1 PUSH0 DUP1 MSTORE DUP1 PUSH0 KECCAK256 SWAP2 PUSH0 JUMPDEST DUP2 DUP2 LT PUSH2 0x53D JUMPI POP SWAP6 DUP4 PUSH1 0x1 SWAP6 SWAP7 SWAP8 LT PUSH2 0x525 JUMPI JUMPDEST POP POP POP DUP2 SHL ADD PUSH0 SSTORE PUSH2 0xC1 JUMP JUMPDEST ADD MLOAD PUSH0 NOT PUSH1 0xF8 DUP5 PUSH1 0x3 SHL AND SHR NOT AND SWAP1 SSTORE PUSH0 DUP1 DUP1 PUSH2 0x518 JUMP JUMPDEST SWAP2 SWAP3 PUSH1 0x20 PUSH1 0x1 DUP2 SWAP3 DUP7 DUP12 ADD MLOAD DUP2 SSTORE ADD SWAP5 ADD SWAP3 ADD PUSH2 0x503 JUMP JUMPDEST PUSH0 DUP1 MSTORE PUSH32 0x290DECD9548B62A8D60345A988386FC84BA6BC95484008F6362F93160EF3E563 PUSH1 0x1F DUP4 ADD PUSH1 0x5 SHR DUP2 ADD SWAP2 PUSH1 0x20 DUP5 LT PUSH2 0x5AD JUMPI JUMPDEST PUSH1 0x1F ADD PUSH1 0x5 SHR ADD SWAP1 JUMPDEST DUP2 DUP2 LT PUSH2 0x5A2 JUMPI POP PUSH2 0x94 JUMP JUMPDEST PUSH0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x595 JUMP JUMPDEST SWAP1 SWAP2 POP DUP2 SWAP1 PUSH2 0x58C JUMP JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0x82 JUMP JUMPDEST PUSH0 DUP1 REVERT JUMPDEST PUSH1 0x40 MLOAD SWAP1 PUSH1 0x60 DUP3 ADD PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT DUP4 DUP3 LT OR PUSH2 0x322 JUMPI PUSH1 0x40 MSTORE JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP2 SWAP1 PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP3 ADD PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT DUP4 DUP3 LT OR PUSH2 0x322 JUMPI PUSH1 0x40 MSTORE JUMP INVALID PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x2C 0xF7 DUP9 0x1E DUP2 PUSH13 0x3FA7598714CAA546D195321BDE 0xED PUSH2 0x9B7 0xC6 0xDE CALLDATALOAD 0xB2 SWAP14 MCOPY 0xB7 SWAP6 SWAP5 PUSH5 0x736F6C6343 STOP ADDMOD 0x1E STOP CALLER ",
+                        "sourceMap": "69:186:0:-:0;;;;;;;;:::i;:::-;;;;:::i;:::-;;;;-1:-1:-1;;;69:186:0;;;;;;;180:27;;69:186;195:2;69:186;;;;;:::i;:::-;;;;-1:-1:-1;;;69:186:0;;;;;180:27;;69:186;;;;;;;;;;-1:-1:-1;;;;;69:186:0;;;;-1:-1:-1;69:186:0;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;-1:-1:-1;;;;;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;:::i;:::-;;;;-1:-1:-1;;;69:186:0;;;;;;;226:25;;69:186;195:2;69:186;;;;;:::i;:::-;;;;-1:-1:-1;;;69:186:0;;;;;226:25;;69:186;;;;;;;;;;-1:-1:-1;;;;;69:186:0;;;;226:25;69:186;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;226:25;69:186;;;;;226:25;69:186;;;;;;;;-1:-1:-1;;;;;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;226:25;69:186;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;226:25;69:186;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;-1:-1:-1;69:186:0;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;-1:-1:-1;69:186:0;;;;;-1:-1:-1;69:186:0;;;;;;;;;;226:25;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;226:25;69:186;;;;;;;;;;226:25;69:186;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;226:25;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;-1:-1:-1;69:186:0;;;-1:-1:-1;69:186:0;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;-1:-1:-1;69:186:0;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;69:186:0;;;;;;;;;;:::o;:::-;;;;;;;-1:-1:-1;;69:186:0;;;-1:-1:-1;;;;;69:186:0;;;;;;;;;;:::o"
+                    },
+                    "deployedBytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "5f80fdfea26469706673582212202cf7881e816c3fa7598714caa546d195321bdeed6109b7c6de35b29d5eb7959464736f6c634300081e0033",
+                        "opcodes": "PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x2C 0xF7 DUP9 0x1E DUP2 PUSH13 0x3FA7598714CAA546D195321BDE 0xED PUSH2 0x9B7 0xC6 0xDE CALLDATALOAD 0xB2 SWAP14 MCOPY 0xB7 SWAP6 SWAP5 PUSH5 0x736F6C6343 STOP ADDMOD 0x1E STOP CALLER ",
+                        "sourceMap": "69:186:0:-:0;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "11400",
+                            "executionCost": "infinite",
+                            "totalCost": "infinite"
+                        }
+                    },
+                    "methodIdentifiers": {}
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol\":\"Pengguna\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol\":{\"keccak256\":\"0xe9b6b723669b635305dc4937861bba5f49ac6390566288a50b7c0f70fd983da3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://975f2cdf63a7755af03d110e72a3ff7fce376d0960df67fd2deb682d40309a27\",\"dweb:/ipfs/QmYgh9EDSKvMypM39tnyYx29dn4k44jiXtM6AigUi36zyJ\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 16,
+                            "contract": "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol:Pengguna",
+                            "label": "person1",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_struct(Userr)8_storage"
+                        },
+                        {
+                            "astId": 24,
+                            "contract": "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol:Pengguna",
+                            "label": "person2",
+                            "offset": 0,
+                            "slot": "3",
+                            "type": "t_struct(Userr)8_storage"
+                        }
+                    ],
+                    "types": {
+                        "t_string_storage": {
+                            "encoding": "bytes",
+                            "label": "string",
+                            "numberOfBytes": "32"
+                        },
+                        "t_struct(Userr)8_storage": {
+                            "encoding": "inplace",
+                            "label": "struct Pengguna.Userr",
+                            "members": [
+                                {
+                                    "astId": 3,
+                                    "contract": "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol:Pengguna",
+                                    "label": "nama",
+                                    "offset": 0,
+                                    "slot": "0",
+                                    "type": "t_string_storage"
+                                },
+                                {
+                                    "astId": 5,
+                                    "contract": "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol:Pengguna",
+                                    "label": "umur",
+                                    "offset": 0,
+                                    "slot": "1",
+                                    "type": "t_uint256"
+                                },
+                                {
+                                    "astId": 7,
+                                    "contract": "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol:Pengguna",
+                                    "label": "alamat",
+                                    "offset": 0,
+                                    "slot": "2",
+                                    "type": "t_string_storage"
+                                }
+                            ],
+                            "numberOfBytes": "96"
+                        },
+                        "t_uint256": {
+                            "encoding": "inplace",
+                            "label": "uint256",
+                            "numberOfBytes": "32"
+                        }
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol": {
+            "ast": {
+                "absolutePath": "c:/Users/HP/OneDrive/Documents/Project/SmartContract/PersonalUser.sol",
+                "exportedSymbols": {
+                    "Pengguna": [
+                        25
+                    ]
+                },
+                "id": 26,
+                "license": "MIT",
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            ">=",
+                            "0.8",
+                            ".30",
+                            "<",
+                            "0.9",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "33:32:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "canonicalName": "Pengguna",
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 25,
+                        "linearizedBaseContracts": [
+                            25
+                        ],
+                        "name": "Pengguna",
+                        "nameLocation": "78:8:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "canonicalName": "Pengguna.Userr",
+                                "id": 8,
+                                "members": [
+                                    {
+                                        "constant": false,
+                                        "id": 3,
+                                        "mutability": "mutable",
+                                        "name": "nama",
+                                        "nameLocation": "116:4:0",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 8,
+                                        "src": "109:11:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        },
+                                        "typeName": {
+                                            "id": 2,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "109:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 5,
+                                        "mutability": "mutable",
+                                        "name": "umur",
+                                        "nameLocation": "132:4:0",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 8,
+                                        "src": "127:9:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "typeName": {
+                                            "id": 4,
+                                            "name": "uint",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "127:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 7,
+                                        "mutability": "mutable",
+                                        "name": "alamat",
+                                        "nameLocation": "150:6:0",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 8,
+                                        "src": "143:13:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        },
+                                        "typeName": {
+                                            "id": 6,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "143:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    }
+                                ],
+                                "name": "Userr",
+                                "nameLocation": "96:5:0",
+                                "nodeType": "StructDefinition",
+                                "scope": 25,
+                                "src": "89:71:0",
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "id": 16,
+                                "mutability": "mutable",
+                                "name": "person1",
+                                "nameLocation": "170:7:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 25,
+                                "src": "164:43:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Userr_$8_storage",
+                                    "typeString": "struct Pengguna.Userr"
+                                },
+                                "typeName": {
+                                    "id": 10,
+                                    "nodeType": "UserDefinedTypeName",
+                                    "pathNode": {
+                                        "id": 9,
+                                        "name": "Userr",
+                                        "nameLocations": [
+                                            "164:5:0"
+                                        ],
+                                        "nodeType": "IdentifierPath",
+                                        "referencedDeclaration": 8,
+                                        "src": "164:5:0"
+                                    },
+                                    "referencedDeclaration": 8,
+                                    "src": "164:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Userr_$8_storage_ptr",
+                                        "typeString": "struct Pengguna.Userr"
+                                    }
+                                },
+                                "value": {
+                                    "arguments": [
+                                        {
+                                            "hexValue": "6865726d616e",
+                                            "id": 12,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "186:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_d4f664dd7ec9ea822b1c56750784c05b20b95657f9b4f36278058f2e1740177b",
+                                                "typeString": "literal_string \"herman\""
+                                            },
+                                            "value": "herman"
+                                        },
+                                        {
+                                            "hexValue": "3230",
+                                            "id": 13,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "195:2:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_20_by_1",
+                                                "typeString": "int_const 20"
+                                            },
+                                            "value": "20"
+                                        },
+                                        {
+                                            "hexValue": "736c656d616e",
+                                            "id": 14,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "198:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_b36377b3f05a8e4f24f4466aa2906d4288b340d2354003a44fa9527d4d1df882",
+                                                "typeString": "literal_string \"sleman\""
+                                            },
+                                            "value": "sleman"
+                                        }
+                                    ],
+                                    "expression": {
+                                        "argumentTypes": [
+                                            {
+                                                "typeIdentifier": "t_stringliteral_d4f664dd7ec9ea822b1c56750784c05b20b95657f9b4f36278058f2e1740177b",
+                                                "typeString": "literal_string \"herman\""
+                                            },
+                                            {
+                                                "typeIdentifier": "t_rational_20_by_1",
+                                                "typeString": "int_const 20"
+                                            },
+                                            {
+                                                "typeIdentifier": "t_stringliteral_b36377b3f05a8e4f24f4466aa2906d4288b340d2354003a44fa9527d4d1df882",
+                                                "typeString": "literal_string \"sleman\""
+                                            }
+                                        ],
+                                        "id": 11,
+                                        "name": "Userr",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 8,
+                                        "src": "180:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_type$_t_struct$_Userr_$8_storage_ptr_$",
+                                            "typeString": "type(struct Pengguna.Userr storage pointer)"
+                                        }
+                                    },
+                                    "id": 15,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "structConstructorCall",
+                                    "lValueRequested": false,
+                                    "nameLocations": [],
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "180:27:0",
+                                    "tryCall": false,
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Userr_$8_memory_ptr",
+                                        "typeString": "struct Pengguna.Userr memory"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 24,
+                                "mutability": "mutable",
+                                "name": "person2",
+                                "nameLocation": "216:7:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 25,
+                                "src": "210:41:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Userr_$8_storage",
+                                    "typeString": "struct Pengguna.Userr"
+                                },
+                                "typeName": {
+                                    "id": 18,
+                                    "nodeType": "UserDefinedTypeName",
+                                    "pathNode": {
+                                        "id": 17,
+                                        "name": "Userr",
+                                        "nameLocations": [
+                                            "210:5:0"
+                                        ],
+                                        "nodeType": "IdentifierPath",
+                                        "referencedDeclaration": 8,
+                                        "src": "210:5:0"
+                                    },
+                                    "referencedDeclaration": 8,
+                                    "src": "210:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Userr_$8_storage_ptr",
+                                        "typeString": "struct Pengguna.Userr"
+                                    }
+                                },
+                                "value": {
+                                    "arguments": [
+                                        {
+                                            "hexValue": "61736570",
+                                            "id": 20,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "232:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_ab224e82ab78d62668bdaa8054571cd3ab9d04525262bd3ffcdc7e4003b17752",
+                                                "typeString": "literal_string \"asep\""
+                                            },
+                                            "value": "asep"
+                                        },
+                                        {
+                                            "hexValue": "3230",
+                                            "id": 21,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "239:2:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_20_by_1",
+                                                "typeString": "int_const 20"
+                                            },
+                                            "value": "20"
+                                        },
+                                        {
+                                            "hexValue": "736c656d616e",
+                                            "id": 22,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "242:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_b36377b3f05a8e4f24f4466aa2906d4288b340d2354003a44fa9527d4d1df882",
+                                                "typeString": "literal_string \"sleman\""
+                                            },
+                                            "value": "sleman"
+                                        }
+                                    ],
+                                    "expression": {
+                                        "argumentTypes": [
+                                            {
+                                                "typeIdentifier": "t_stringliteral_ab224e82ab78d62668bdaa8054571cd3ab9d04525262bd3ffcdc7e4003b17752",
+                                                "typeString": "literal_string \"asep\""
+                                            },
+                                            {
+                                                "typeIdentifier": "t_rational_20_by_1",
+                                                "typeString": "int_const 20"
+                                            },
+                                            {
+                                                "typeIdentifier": "t_stringliteral_b36377b3f05a8e4f24f4466aa2906d4288b340d2354003a44fa9527d4d1df882",
+                                                "typeString": "literal_string \"sleman\""
+                                            }
+                                        ],
+                                        "id": 19,
+                                        "name": "Userr",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 8,
+                                        "src": "226:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_type$_t_struct$_Userr_$8_storage_ptr_$",
+                                            "typeString": "type(struct Pengguna.Userr storage pointer)"
+                                        }
+                                    },
+                                    "id": 23,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "structConstructorCall",
+                                    "lValueRequested": false,
+                                    "nameLocations": [],
+                                    "names": [],
+                                    "nodeType": "FunctionCall",
+                                    "src": "226:25:0",
+                                    "tryCall": false,
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Userr_$8_memory_ptr",
+                                        "typeString": "struct Pengguna.Userr memory"
+                                    }
+                                },
+                                "visibility": "internal"
+                            }
+                        ],
+                        "scope": 26,
+                        "src": "69:186:0",
+                        "usedErrors": [],
+                        "usedEvents": []
+                    }
+                ],
+                "src": "33:226:0"
+            },
+            "id": 0
+        }
+    }
+}
