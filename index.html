@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/528/528111.png" type="image/png">    <title>NescafeNetwork</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* (Style CSS sama seperti sebelumnya, ditambah style baru di bawah ini) */
+        :root {
+            --nescafe-red: #E61F26;
+            --dark-bg: #1a1a1a;
+            --light-text: #ffffff;
+            --card-bg: #2d2d2d;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            border-top: 5px solid var(--nescafe-red);
+        }
+
+        h1 { color: var(--nescafe-red); font-weight: 700; margin-bottom: 10px; }
+        p.subtitle { color: #aaa; font-size: 14px; margin-bottom: 30px; }
+
+        .btn-nescafe {
+            background-color: var(--nescafe-red);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-shadow: 0 5px 15px rgba(230, 31, 38, 0.4);
+        }
+        .btn-nescafe:hover { transform: translateY(-3px); background-color: #c41a20; }
+
+        #infoArea {
+            display: none;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        /* --- STYLE BARU UNTUK SALDO --- */
+        .balance-card {
+            background-color: #3d3d3d;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--nescafe-red);
+        }
+        .token-amount {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .token-label {
+            font-size: 12px;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 2px solid #444;
+            background-color: var(--dark-bg);
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        input[type="number"]:focus { border-color: var(--nescafe-red); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Nescafe Web3 Hub</h1>
+        <p class="subtitle">Gerbang menuju Token & NFT Eksklusif Nescafe.</p>
+        
+        <button id="connectBtn" class="btn-nescafe" onclick="connectWallet()">
+            CONNECT WALLET
+        </button>
+        
+        <div id="infoArea">
+            <div class="balance-card">
+                <div class="token-label">Amount</div>
+                <div class="token-amount">
+                    <span id="userBalance">0</span> NSCF
+                </div>
+                <div style="font-size: 12px; color: #888; margin-top: 5px;">
+                    (<span id="ethBalance">0</span> ETH)
+                </div>
+            </div>
+
+            <p style="margin:0; color:#aaa; font-size:14px;">Harga Token:</p>
+            <div style="font-size: 18px; font-weight: 700; margin-bottom: 20px;">
+                1 ETH = <span id="priceDisplay" style="color: var(--nescafe-red);">...</span> Token
+            </div>
+            
+            <input type="number" id="buyAmount" placeholder="Jumlah ETH (misal 0.01)" step="0.0001">
+            
+            <button class="btn-nescafe" onclick="beliToken()">
+                Beli Sekarang 🚀
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let provider, signer, tokoContract, tokenContract; 
+        
+        // ============================================================
+        // ⚠️ ISI DUA ALAMAT INI DENGAN BENAR ⚠️
+        // ============================================================
+        const alamatToko  = "0x6533424b7086Ab6bE64E52F5Dfd4B7a2360047f0"; 
+        const alamatToken = "0xb2791720891cBF112631aCd12f3Dde63A4f6083a"; 
+
+        // ABI Toko (Untuk Beli)
+        const tokoABI = [
+            "function TokenPrice() view returns (uint256)",
+            "function TokenBuy() payable"
+        ];
+
+        // ABI Token (Untuk Cek Saldo) - Kita cuma butuh fungsi balanceOf
+        const tokenABI = [
+            "function balanceOf(address) view returns (uint256)"
+        ];
+
+        async function connectWallet() {
+            if (typeof window.ethereum !== 'undefined') {
+                try {
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    
+                    provider = new ethers.providers.Web3Provider(window.ethereum);
+                    signer = provider.getSigner();
+                    
+                    // Setup Dua Kontrak Sekaligus
+                    tokoContract = new ethers.Contract(alamatToko, tokoABI, signer);
+                    tokenContract = new ethers.Contract(alamatToken, tokenABI, provider);
+
+                    // Update UI
+                    const btn = document.getElementById("connectBtn");
+                    btn.innerText = "✅ Wallet Terhubung";
+                    btn.style.backgroundColor = "#2d2d2d";
+                    btn.style.cursor = "default";
+                    
+                    document.getElementById("infoArea").style.display = "block";
+                    
+                    // Ambil Data Awal
+                    refreshData();
+
+                } catch (error) { console.error(error); }
+            } else { alert("Install MetaMask dulu!"); }
+        }
+
+        async function refreshData() {
+            if(tokoContract && tokenContract) {
+                // 1. Cek Harga
+                const harga = await tokoContract.TokenPrice();
+                document.getElementById("priceDisplay").innerText = harga.toString();
+
+                // 2. Cek Saldo User
+                const myAddress = await signer.getAddress();
+                
+                // Saldo Token (BLJR)
+                const saldoToken = await tokenContract.balanceOf(myAddress);
+                // Format: Wei (18 nol) -> Angka Biasa
+                const saldoTokenFormatted = ethers.utils.formatUnits(saldoToken, 18);
+                document.getElementById("userBalance").innerText = parseFloat(saldoTokenFormatted).toFixed(2); // Ambil 2 desimal
+
+                // Saldo ETH (Opsional, biar keren)
+                const saldoEth = await provider.getBalance(myAddress);
+                document.getElementById("ethBalance").innerText = parseFloat(ethers.utils.formatEther(saldoEth)).toFixed(4);
+            }
+        }
+
+       async function beliToken() {
+    const ethAmount = document.getElementById("buyAmount").value;
+    const btn = document.querySelector("button[onclick='beliToken()']"); // Ambil elemen tombol
+    const originalText = btn.innerText; // Simpan teks asli "Beli Sekarang 🚀"
+
+    if(!ethAmount) return alert("Isi jumlah ETH dulu!");
+
+    try {
+        // 1. UBAH TAMPILAN (Loading State)
+        btn.innerText = "⏳ Sedang Memproses...";
+        btn.disabled = true; // Cegah user klik dua kali
+        btn.style.backgroundColor = "#999"; // Ubah warna jadi abu-abu
+        btn.style.cursor = "not-allowed";
+
+        // 2. PROSES TRANSAKSI
+        const valueInWei = ethers.utils.parseEther(ethAmount);
+        
+        // Kirim request ke wallet
+        const tx = await tokoContract.TokenBuy({ value: valueInWei });
+        
+        // Beritahu user transaksi sudah dikirim (Pending)
+        console.log("Transaksi hash:", tx.hash);
+        
+        // Tunggu sampai block di-mine (Selesai)
+        await tx.wait(); 
+        
+        // 3. SUKSES
+        alert("Pembelian Berhasil! Nikmati Token Nescafe-mu! ☕🎉");
+        
+        // Reset Input & Update Saldo
+        document.getElementById("buyAmount").value = ""; 
+        refreshData(); 
+
+    } catch (err) { 
+        console.error(err); 
+        
+        // Cek jika user menolak di MetaMask (Error code 4001)
+        if (err.code === "ACTION_REJECTED") {
+            alert("Yah, transaksi dibatalkan oleh user.");
+        } else {
+            alert("Gagal Beli: " + err.message); // Error lain (stok habis/saldo kurang)
+        }
+
+    } finally {
+        // 4. KEMBALIKAN TOMBOL KE SEMULA (Apapun yang terjadi)
+        btn.innerText = originalText;
+        btn.disabled = false;
+        btn.style.backgroundColor = ""; // Reset warna ke CSS asli (Merah)
+        btn.style.cursor = "pointer";
+    }
+}
+    {
+     { console.error(err); alert("Gagal Beli: " + err.message); }
+    }
+    </script>
+</body>
+</html>
